@@ -1,151 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eclipse – Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eclipse — Privacy Policy</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    :root { color-scheme: light dark; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 16px;
-      line-height: 1.65;
-      color: #1a1a1a;
-      background: #fafaf9;
-      padding: 0 1rem 4rem;
-    }
-
-    .wrap {
-      max-width: 680px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 3rem 0;
+      padding: 32px 20px 64px;
+      color: #16181d;
+      background: #faf8f6;
     }
-
-    header {
-      margin-bottom: 2.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #e5e5e3;
+    @media (prefers-color-scheme: dark) {
+      body { color: #e9e9ec; background: #050506; }
+      a { color: #58bdfd; }
     }
-
-    header h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #111;
-    }
-
-    header p {
-      margin-top: 0.35rem;
-      font-size: 0.85rem;
-      color: #888;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    section h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 0.5rem;
-    }
-
-    section p {
-      color: #444;
-      font-size: 0.95rem;
-    }
-
-    section p + p {
-      margin-top: 0.75rem;
-    }
-
-    a {
-      color: #555;
-    }
-
-    footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #e5e5e3;
-      font-size: 0.8rem;
-      color: #aaa;
-    }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 32px; }
+    .updated { color: #888; font-size: 0.9rem; margin-top: 0; }
+    p { white-space: pre-line; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Eclipse Privacy Policy</h1>
-      <p>Last updated June 13, 2026</p>
-    </header>
+  <h1>Eclipse — Privacy Policy</h1>
+  <p class="updated">Last updated: June 15, 2026</p>
 
-    <section>
-      <h2>Overview</h2>
-      <p>Eclipse is built to be a private, account-free manga and comic reader. Most of what you do in the app stays on your device: your library, reading progress, settings, bookmarks, and downloads.</p>
-      <p>Some optional features use third-party services. If you turn on iCloud Sync, your reading state can sync through your personal iCloud account. If you use the free version, Google may serve occasional ads. If you buy Eclipse Pro, Apple processes the purchase and a third-party service helps us confirm that Pro is active.</p>
-      <p>We do not run our own tracking system, sell your data, or require an Eclipse account.</p>
-    </section>
+  <h2>Overview</h2>
+  <p>Eclipse is built to be a private, account-free manga and comic reader. Most of what you do in the app stays on your device: your library, reading progress, settings, bookmarks, and downloads.
 
-    <section>
-      <h2>Data stored on your device</h2>
-      <p>Eclipse stores the following data locally on your device: your reading library, categories, reading progress, bookmarks, display preferences, source repositories you add, and optional offline chapter downloads. Komga server credentials are stored in the iOS secure credential store (Keychain) and never leave the device.</p>
-    </section>
+Some optional features use third-party services. If you turn on iCloud Sync, your reading state can sync through your personal iCloud account. If you use the free version, Google may serve occasional ads. If you buy Eclipse Pro, Apple processes the purchase and a third-party service helps us confirm that Pro is active.
 
-    <section>
-      <h2>iCloud sync</h2>
-      <p>When you enable iCloud sync in Settings → Sync, Eclipse stores app state such as library metadata, reading progress, preferences, bookmarks, and sync metadata in your personal iCloud account via Apple's CloudKit service. Manga files, downloaded chapters, page images, cache files, source credentials, and passwords are not uploaded as part of Eclipse sync. iCloud sync is optional and can be disabled at any time in Settings → Sync.</p>
-    </section>
+We do not run our own tracking system, sell your data, or require an Eclipse account.</p>
 
-    <section>
-      <h2>Network access</h2>
-      <p>For reading features, Eclipse connects to servers and URLs that you configure, such as Komga servers and source repository URLs. Eclipse also connects to third-party services needed for optional features, including iCloud sync, ads, and purchase validation.</p>
-    </section>
+  <h2>Data stored on your device</h2>
+  <p>Eclipse stores the following data locally on your device: your reading library, categories, reading progress, bookmarks, display preferences, source repositories you add, and optional offline chapter downloads. Komga server credentials are stored in the iOS secure credential store (Keychain) and never leave the device.</p>
 
-    <section>
-      <h2>Photos access</h2>
-      <p>Eclipse requests access to your Photo Library only when you explicitly choose to save a manga page or cover image. The permission prompt appears at the moment of saving. Eclipse does not access your photos for any other purpose.</p>
-    </section>
+  <h2>iCloud sync</h2>
+  <p>When you enable iCloud sync in Settings → Sync, Eclipse stores app state such as library metadata, reading progress, preferences, bookmarks, and sync metadata in your personal iCloud account via Apple's CloudKit service. Manga files, downloaded chapters, page images, cache files, source credentials, and passwords are not uploaded as part of Eclipse sync. iCloud sync is optional and can be disabled at any time in Settings → Sync.</p>
 
-    <section>
-      <h2>Advertising</h2>
-      <p>Eclipse shows ads to free users served by Google. Eclipse does not request App Tracking Transparency permission and serves only non-personalised, contextual ads. Google may still collect limited diagnostic and usage data through its ad SDK, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You can further limit ad-related data collection through <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google's advertising controls</a>. Purchasing Eclipse Pro removes all ads.</p>
-    </section>
+  <h2>Network access</h2>
+  <p>For reading features, Eclipse connects to servers and URLs that you configure, such as Komga servers and source repository URLs. Eclipse also connects to third-party services needed for optional features, including iCloud sync, ads, and purchase validation.</p>
 
-    <section>
-      <h2>In-app purchases</h2>
-      <p>Eclipse Pro is a one-time purchase processed by Apple through the App Store. Eclipse uses RevenueCat to validate purchase status. RevenueCat may receive an anonymous app user identifier, purchase receipt and transaction information, product identifiers, and related diagnostics needed to manage purchases. RevenueCat does not receive your Apple payment card details. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a> for details.</p>
-    </section>
+  <h2>Photos access</h2>
+  <p>Eclipse requests access to your Photo Library only when you explicitly choose to save a manga page or cover image. The permission prompt appears at the moment of saving. Eclipse does not access your photos for any other purpose.</p>
 
-    <section>
-      <h2>Data we do not collect</h2>
-      <p>Eclipse itself does not collect analytics, crash reports, or usage telemetry, and does not track you across other apps or websites. Third-party SDKs such as Google's ad SDK may collect their own diagnostics as described in their respective privacy policies. Eclipse does not sell personal data.</p>
-    </section>
+  <h2>Advertising</h2>
+  <p>Eclipse shows ads to free users served by Google. On iOS, Eclipse requests App Tracking Transparency (ATT) permission. If you grant it, ads may be personalised based on your activity across other apps and websites. If you decline, Eclipse serves only non-personalised, contextual ads. Google may collect diagnostic and usage data through its ad SDK, as described in Google's Privacy Policy (policies.google.com/privacy). You can adjust ad preferences at adssettings.google.com. Purchasing Eclipse Pro removes all ads.</p>
 
-    <section>
-      <h2>Children's privacy</h2>
-      <p>Eclipse is rated 17+ and is not directed at children under 17. Eclipse does not knowingly collect data from children.</p>
-    </section>
+  <h2>In-app purchases</h2>
+  <p>Eclipse Pro is a one-time purchase processed by Apple through the App Store. Eclipse uses RevenueCat to validate purchase status. RevenueCat may receive an anonymous app user identifier, purchase receipt and transaction information, product identifiers, and related diagnostics needed to manage purchases. RevenueCat does not receive your Apple payment card details. See revenuecat.com/privacy for details.</p>
 
-    <section>
-      <h2>Data deletion</h2>
-      <p>Removing Eclipse from your device deletes all local data. You can remove offline downloads or disconnect Komga from within Settings at any time. If iCloud sync was enabled, synced data may remain in your iCloud account after the app is deleted. To remove it, use the Sync settings before deleting the app, or contact us at <a href="mailto:eclipseappcontact@gmail.com">eclipseappcontact@gmail.com</a> for guidance.</p>
-    </section>
+  <h2>Data we do not collect</h2>
+  <p>Eclipse itself does not collect analytics, crash reports, or usage telemetry, and does not track you across other apps or websites. Third-party SDKs such as Google's ad SDK may collect their own diagnostics as described in their respective privacy policies. Eclipse does not sell personal data.</p>
 
-    <section>
-      <h2>Changes to this policy</h2>
-      <p>If this policy changes materially, the updated version will be available at this URL. Continued use of Eclipse after a policy change constitutes acceptance of the new policy.</p>
-    </section>
+  <h2>Children's privacy</h2>
+  <p>Eclipse is rated 16+ and is not directed at children under 16. Eclipse does not knowingly collect data from children.</p>
 
-    <section>
-      <h2>Contact</h2>
-      <p>For privacy questions or data requests, contact <a href="mailto:eclipseappcontact@gmail.com">eclipseappcontact@gmail.com</a>.</p>
-    </section>
+  <h2>Data deletion</h2>
+  <p>Removing Eclipse from your device deletes all local data. You can remove offline downloads or disconnect Komga from within Settings at any time. If iCloud sync was enabled, synced data may remain in your iCloud account after the app is deleted. To remove it, use the Sync settings before deleting the app, or contact us at eclipseappcontact@gmail.com for guidance.</p>
 
-    <footer>
-      &copy; 2026 Eclipse. All rights reserved.
-    </footer>
-  </div>
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, the updated version will be available at the URL linked from Settings → About → Privacy Policy. Continued use of Eclipse after a policy change constitutes acceptance of the new policy.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions or data requests, contact eclipseappcontact@gmail.com.</p>
 </body>
 </html>
